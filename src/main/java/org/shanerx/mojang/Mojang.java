@@ -85,7 +85,7 @@ public class Mojang
      */
     public String getUUIDOfUsername(String username)
     {
-        return (String) getJSONObject("https://api.mojang.com/users/profiles/minecraft/" + username).get("id");
+        return (String) getJSONObject("https://api.minecraftservices.com/minecraft/profile/lookup/name/" + username).get("id");
     }
 
     /**
